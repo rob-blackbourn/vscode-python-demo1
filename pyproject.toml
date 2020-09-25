@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "vscode-python-demo1"
+version = "0.1.0"
+description = "A starter Python demo project"
+authors = ["Rob Blackbourn <rob.blackbourn@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [
+    { include = "bareasgi_graphql_next" },
+]
+repository = "https://github.com/rob-blackbourn/vscode-python-demo1"
+
+[tool.poetry.scripts]
+vscode-python-demo1 = "vscode_python_demo1.entrypoint.startup:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.5.4"
+mypy = "^0.782"
+pylint = "^2.6.0"
+pytest = "^6.0.2"
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"
