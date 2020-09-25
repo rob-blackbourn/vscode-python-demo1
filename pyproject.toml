@@ -6,7 +6,7 @@ authors = ["Rob Blackbourn <rob.blackbourn@gmail.com>"]
 license = "Apache-2.0"
 readme = "README.md"
 packages = [
-    { include = "bareasgi_graphql_next" },
+    { include = "vscode_python_demo1" },
 ]
 repository = "https://github.com/rob-blackbourn/vscode-python-demo1"
 
